@@ -11,8 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="ekstra.css">
     <link rel="stylesheet" href="system.css">
-    <link rel="stylesheet" href="index.css">
     <script src="burger.js" defer></script>
 
     <title>Document</title>
@@ -20,6 +20,124 @@
 </head>
 
 <body>
+    <main>
+        <section class="grid bag-yori-jomo">
+
+            <!-- Billede til venstre -->
+            <div class="col-12 col-md-4 col-md-start-2">
+                <img src="img/designtegning.png" alt="Billede af en masse tegninger af sko">
+            </div>
+
+            <!-- Indhold til højre -->
+            <div class="col-12 col-md-4 col-md-start-7 yori-content">
+
+                <h2>Bag Yori Jomo</h2>
+
+                <p>
+                    Yori Jomo er skabt af Sanne med en vision om at forene
+                    tidløst design og kvalitet. Med erfaring fra modebranchen
+                    har hun skabt et brand, hvor dansk design møder italiensk
+                    håndværk, og hvor enkelhed og karakter går hånd i hånd.
+                </p>
+
+                <!-- Ikoner -->
+                <div class="grid yori-icons">
+
+                    <div class="col-4">
+                        <img src="img/ikon1.png" alt="">
+                        <h4>Håndlavet</h4>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="img/ikon2.png" alt="">
+                        <h4>Dansk Design</h4>
+                    </div>
+
+                    <div class="col-4">
+                        <img src="img/ikon3.png" alt="">
+                        <h4>Ægte læder</h4>
+                    </div>
+
+                </div>
+
+                <!-- Knap -->
+                <div class="yori-button">
+                    <button class="btn-secondary yori-button">LÆS MERE</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="grid retailers">
+            <div class="col-12 col-md-4 col-md-start-5">
+                <div>
+                    <h2>Find din nærmeste retailer</h2>
+                </div>
+                <div>
+                    <img src="img/retailers.png" alt="kort over butikker">
+                </div>
+                <div>
+                    <button class="btn-secondary">RETAILERS</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="grid footer">
+
+        <!-- Ikon øverst i midten -->
+        <div class="col-2 col-start-6 col-md-2 col-md-start-6 footer-icon">
+            <img src="img/yi_ikon.svg" alt="Yori Jomo ikon">
+        </div>
+
+        <!-- Venstre side: logo og sociale medier -->
+        <div class="col-12 col-md-4 col-md-start-2 footer-brand">
+            <img class="footer-logo" src="img/logo_footer.png" alt="Yori Jomo logo">
+
+            <p>Dansk design - Sko skabt til at holde.</p>
+
+            <div class="footer-socials">
+                <a href="#" aria-label="Instagram">
+                    <img src="img/insta.png" alt="">
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <img src="img/facebook.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <!-- Højre side -->
+        <div class="col-12 col-md-4 col-md-start-8 footer-info">
+
+            <div class="footer-newsletter">
+                <h2>Tilmeld nyhedsbrev:</h2>
+                <p>Få eksklusive nyheder og tilbud ved at tilmelde dig vores nyhedsbrev her:</p>
+
+                <form>
+                    <input type="email" placeholder="E-mail adresse" aria-label="E-mail adresse">
+                    <button type="submit" aria-label="Tilmeld">
+                        →
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-customer">
+                <h2>Kundeservice</h2>
+                <ul>
+                    <li><a href="#">Bestilling</a></li>
+                    <li><a href="#">Levering</a></li>
+                    <li><a href="#">Terms and policies</a></li>
+                    <li><a href="#">Returnering</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Ofte stillede spørgsmål</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
 
 </body>
 
