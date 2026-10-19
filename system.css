@@ -31,6 +31,10 @@ img {
   display: block;
 }
 
+html {
+  background-color: var(--color-base-white);
+}
+
 /* ========== 2: Variable & tokens ========== */
 
 :root {
@@ -107,13 +111,13 @@ img {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 0.5rem;
-  margin: 0 calc(0.5rem / 2);
+  /*margin: 0 calc(0.5rem / 2);*/
   grid-auto-rows: minmax(2rem, auto);
 }
 @media (min-width: 400px) {
   .grid {
     gap: 1rem;
-    margin: 0 calc(1rem / 2);
+    /*margin: 0 calc(1rem / 2);*/
   }
 }
 
@@ -708,7 +712,8 @@ h4 {
 
 p,
 .btn,
-.menu {
+.menu,
+.btn-secondary {
   font-family: "Work Sans", sans-serif;
 }
 
@@ -721,6 +726,7 @@ h1 {
 }
 h2 {
   font-size: var(--font-size-h2-sm);
+  font-weight: 400;
 }
 h3 {
   font-size: var(--font-size-h3-sm);
@@ -729,11 +735,15 @@ h3 {
 h4 {
   font-size: var(--font-size-h4-sm);
   font-weight: 100;
+  line-height: 1.4;
 }
 p {
   font-size: var(--font-size-p-sm);
+  font-weight: 300;
+  line-height: 1.2;
 }
-.btn {
+.btn,
+.btn-secondary {
   font-size: var(--font-size-cta-sm);
 }
 
@@ -757,7 +767,8 @@ p {
   p {
     font-size: var(--font-size-p-lg);
   }
-  .btn {
+  .btn,
+  .btn-secondary {
     font-size: var(--font-size-cta-lg);
   }
 }
