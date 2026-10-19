@@ -1,0 +1,226 @@
+/********************* MOBIL *********************/
+/* hero sektion */
+.hero {
+  background-color: var(--color-dark-red);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  color: var(--color-base-white);
+}
+
+.hero_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-lg);
+}
+
+.hero_2 a {
+  margin: 1rem 0;
+}
+
+.section_hero {
+  padding: 0 0 1.5rem;
+}
+
+.hero_1 img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Galleri sektion */
+.galleri_mobil-skjul {
+  display: none;
+}
+
+/* Kollektioner */
+.section_kollektioner h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.kollektion h4 {
+  text-align: center;
+  margin-top: var(--space-sm);
+}
+
+.section_kollektioner {
+  margin: 4rem 1rem;
+}
+
+/* HEADER NAVBAR */
+header nav {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+
+.menu {
+  list-style: none;
+  display: none; /* skjult i mobil */
+}
+
+.navbar_icons {
+  display: none;
+}
+
+/* Burger menu */
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+  margin-left: auto;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 2px;
+  background-color: var(--color-base-black);
+  display: block;
+}
+
+/* Når menuen åbnes */
+nav.active .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: var(--color-base-white);
+  border: 1px solid var(--color-base-black);
+  z-index: 10;
+}
+
+header nav {
+  position: relative;
+}
+
+/* KNAP */
+/* Pilen er skjult som standard */
+.button-arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 2rem;
+  line-height: 1;
+  opacity: 0;
+  transform: translate(-50%, -50%) translateX(-10px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Teksten forsvinder */
+.read-more:hover .button-text {
+  opacity: 0;
+}
+
+/* Pilen vises */
+.read-more:hover .button-arrow {
+  opacity: 1;
+  transform: translate(-50%, -50%) translateX(0);
+}
+
+/* Glidende overgang på teksten */
+.button-text {
+  transition: opacity 0.3s ease;
+}
+
+.read-more {
+  position: relative;
+}
+
+/********************* DESKTOP *********************/
+@media (min-width: 760px) {
+  /* hero desktop */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0rem;
+    padding: var(--space-xxl);
+  }
+
+  .section_hero {
+    padding: 0rem 1.5rem 1.5rem;
+  }
+
+  .hero_2 {
+    gap: 40px;
+  }
+
+  .hero_2 a {
+    margin: 2rem 0;
+  }
+
+  .hero_1 img {
+    max-width: 550px;
+  }
+
+  /* Galleri */
+  .galleri {
+    padding: 1rem 4rem;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .galleri > div {
+    grid-column: auto;
+  }
+
+  .galleri_mobil-skjul {
+    display: block;
+  }
+
+  /* kollektioner */
+  .section_kollektioner h2 {
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+
+  .section_kollektioner {
+    margin: 6rem 15rem;
+  }
+
+  .gap1 {
+    gap: 2.5rem;
+  }
+
+  /* HEADER NAVBAR */
+  header nav {
+    margin: 1.7rem 1rem;
+  }
+
+  .menu {
+    gap: 3.5rem;
+    list-style: none;
+    display: block;
+    display: flex;
+    align-items: center;
+    margin: 0 3.5rem;
+  }
+
+  header nav > a:last-child {
+    margin-left: auto;
+    padding: 0 1rem 0 0;
+  }
+
+  .navbar_icons {
+    display: block;
+  }
+
+  .burger {
+    display: none;
+  }
+}
