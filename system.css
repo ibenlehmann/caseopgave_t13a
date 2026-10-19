@@ -693,7 +693,7 @@ img {
   }
 }
 
-/* ========== 5: Tekst & Typografi ========== */
+/* ========== 5: Tekst & Typografi, fonte ========== */
 
 .display,
 h1,
@@ -707,7 +707,8 @@ h4 {
 }
 
 p,
-.btn {
+.btn,
+.menu {
   font-family: "Work Sans", sans-serif;
 }
 
@@ -838,7 +839,8 @@ p {
 }
 
 .btn:hover {
-  background-color: var(--color-dark-red);
+  background-color: var(--color-base-white);
+  color: var(--color-dark-red);
   text-decoration: none;
 }
 
@@ -1229,8 +1231,7 @@ html {
  * ---------------------------------------------- */
 
 .slide-fwd-center {
-  -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
+  -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 

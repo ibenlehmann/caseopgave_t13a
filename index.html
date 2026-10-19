@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +16,92 @@
     <link rel="stylesheet" href="index.css">
     <script src="burger.js" defer></script>
 
-    <title>Document</title>
-
+    <title>Forside</title>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="img_laura/logo.svg" alt="logo">
+            </a>
 
-    <button class="btn">TRYK HER</button>
-    <button class="btn-secondary">TRYK HER</button>
+            <button class="burger" aria-label="Åbn menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="menu">
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">RETAILERS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+
+
+            <a href="#" class="navbar_icons">
+                <img src="img_laura/nav.webp" alt="icons">
+            </a>
+        </nav>
+
+    </header>
+
+    <section class="section_hero">
+        <div class="hero">
+            <div class="hero_1">
+                <img src="img_laura/hero-laura.webp" alt="hero">
+            </div>
+            <div class="hero_2">
+                <p class="display">Dansk håndlavet design</p>
+                <h4>Sko designet til at holde. <br> Skabt til kvinder, der vælger med omtanke.</h4>
+                <a href="#" class="btn read-more">
+                    <span class="button-text">SHOP NU</span>
+                    <span class="button-arrow" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section_galleri">
+        <div class="galleri grid">
+            <div class="col-6 col-lg-2">
+                <img src="img_laura/galleri-1.webp" alt="shop">
+            </div>
+            <div class="col-6  col-lg-2">
+                <img src="img_laura/galleri-2.webp" alt="shop">
+            </div>
+            <div class="col-6  col-lg-2">
+                <img src="img_laura/galleri-3.webp" alt="shop">
+            </div>
+            <div class="col-6  col-lg-2">
+                <img src="img_laura/galleri-4.webp" alt="shop">
+            </div>
+            <div class="col-lg-2 galleri_mobil-skjul">
+                <img src="img_laura/galleri-5.webp" alt="shop">
+            </div>
+
+        </div>
+    </section>
+    <section class="section_kollektioner">
+        <h2>Vores kollektioner</h2>
+
+        <div class="grid gap1">
+            <div class="col-6">
+                <a href="#" class="kollektion">
+                    <img src="img_laura/kollektion_sko3.webp" alt="sko">
+                    <h4>Sko</h4>
+                </a>
+            </div>
+            <div class="col-6">
+                <a href="#" class="kollektion">
+                    <img src="img_laura/kollektion_belt.webp" alt="bælter">
+                    <h4>Bælter</h4>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
 </body>
 
 </html>
